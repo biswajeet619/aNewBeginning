@@ -44,11 +44,10 @@ public class VolunteerActivity extends Activity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-
+                        startActivity(new Intent(VolunteerActivity.this,HomeActivity.class));
+                        finish();
                     }
                 });
-        startActivity(new Intent(this,HomeActivity.class));
-        finish();
     }
 
     public void events(View view) {
