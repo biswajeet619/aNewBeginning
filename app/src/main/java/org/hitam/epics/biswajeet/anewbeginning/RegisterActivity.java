@@ -112,7 +112,7 @@ public class RegisterActivity extends Activity {
                             builder.setPositiveButton("Close", null);
                             builder.create().show();
                         } else {
-                            Toast.makeText(RegisterActivity.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                             RegisterActivity.this.finish();
                         }
                     }
