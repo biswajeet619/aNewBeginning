@@ -74,7 +74,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#b8e5ed"
-        android:onClick="checkout"
         android:padding="10dp"
         android:text="Checkout"
         android:textSize="15sp"
