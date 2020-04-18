@@ -11,7 +11,12 @@
         <item name="android:divider">@color/divider</item>
     </style>
 
-    <style name="MyTheme" parent="AppTheme">
+    <style name="MyTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="RemoveActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>

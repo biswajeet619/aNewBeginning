@@ -1,5 +1,6 @@
 package org.hitam.epics.biswajeet.anewbeginning;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ public class VolunteerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volunteer);
+        ActionBar actionBar=getActionBar();
+        actionBar.hide();
     }
     public void onBackPressed() {
         // super.onBackPressed();
@@ -54,7 +57,4 @@ public class VolunteerActivity extends Activity {
         startActivity(new Intent(this, EventsActivity.class));
     }
 
-    public void additems(View view) {
-        startActivity(new Intent(this, AddItemActivity.class));
-    }
 }

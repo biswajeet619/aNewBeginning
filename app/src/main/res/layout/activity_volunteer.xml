@@ -11,69 +11,208 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/donate"
         android:layout_width="match_parent"
-        android:layout_height="245dp"
+        android:layout_height="174dp"
         android:layout_margin="10dp"
-        android:onClick="donate"
+        android:animationCache="true"
         android:textAlignment="gravity"
         android:textDirection="firstStrongLtr"
-        app:cardBackgroundColor="@android:color/holo_purple"
-        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/holo_orange_light"
+        app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="10dp">
 
-        <TextView
-            android:id="@+id/Donate"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/donate_button"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/colorPrimaryLIB"
+            android:onClick="donate"
+            android:text="Donate"
+            android:textColor="@color/icons"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/donate_image"
+            android:layout_width="164dp"
             android:layout_height="match_parent"
-            android:fontFamily="@font/alfa_slab_one"
+            android:layout_gravity="right"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/donate_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Donate to the needy"
+            android:textColor="#18611B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/donate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Donate"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
+            android:textColor="#18611B"
+            android:textSize="34sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/events"
         android:layout_width="match_parent"
-        android:layout_height="237dp"
+        android:layout_height="174dp"
         android:layout_margin="10dp"
-        android:onClick="events"
-        app:cardBackgroundColor="@android:color/holo_purple"
-        app:cardCornerRadius="10dp"
+        android:animationCache="true"
+        app:cardBackgroundColor="@color/background_secondary_color"
+        app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="10dp">
 
-        <TextView
-            android:id="@+id/Events"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/event_button"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/colorPrimaryDarkLIB"
+            android:onClick="events"
+            android:text="Events"
+            android:textColor="@color/icons"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/events_image"
+            android:layout_width="182dp"
             android:layout_height="match_parent"
-            android:fontFamily="@font/alfa_slab_one"
+            android:layout_gravity="right"
+            android:src="@drawable/volunteer_vol" />
+
+        <TextView
+            android:id="@+id/events_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Lookup for events"
+            android:textColor="#093183"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/events_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="EVENTS"
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
+            android:textColor="#093183"
+            android:textSize="34sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button3"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/About"
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="175dp"
         android:layout_margin="10dp"
-        android:background="#FF5722"
+        android:animationCache="true"
+        app:cardBackgroundColor="@android:color/holo_green_light"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/colorPrimaryDarkLIB"
+            android:text="About"
+            android:textColor="@color/icons"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/about_image"
+            android:layout_width="123dp"
+            android:layout_height="165dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/info_vol" />
+
+        <TextView
+            android:id="@+id/about_desc"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Information \nabout the NGO"
+            android:textColor="#8A5702"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="ABOUT"
+            android:textAlignment="center"
+            android:textColor="#8A5702"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
         android:fadingEdge="vertical"
-        android:fontFamily="@font/alfa_slab_one"
+        android:fontFamily="monospace"
+
         android:foregroundTint="#AC0E0E"
         android:freezesText="true"
+        android:gravity="center"
         android:onClick="Logout"
         android:shadowColor="#D1D0D0"
         android:shadowDx="5"
         android:text="SIGN OUT"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 </LinearLayout>
